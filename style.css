@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-bar h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  #timer {
+    font-size: 16px;
+    background: white;
+    color: #007bff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  #question {
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-weight: bold;
+  }
+  
+  .option-btn {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .option-btn:hover {
+    background-color: #ddd;
+  }
+  
+  #feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    height: 20px;
+  }
+  
+  #next-btn {
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #next-btn:hover {
+    background-color: #218838;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 480px) {
+    .top-bar h1 {
+      font-size: 16px;
+    }
+  
+    #timer {
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  
+    .container {
+      padding: 16px;
+      width: 95%;
+    }
+  
+    #question {
+      font-size: 15px;
+    }
+  
+    .option-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    #next-btn {
+      font-size: 15px;
+    }
+  }
+  
